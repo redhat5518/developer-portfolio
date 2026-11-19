@@ -5,78 +5,284 @@
 
 @section('content')
 
-<section class="hero container">
+<section class="hero">
     <div class="hero-content">
-        <p class="eyebrow">SOFTWARE ENGINEER · INDIA</p>
+        <p class="hero-eyebrow">SOFTWARE ENGINEER · INDIA</p>
 
         <h1>
-            Building software<br>
-            that solves <span>real problems.</span>
+            Building reliable
+            <span>backend solutions</span>
+            and intelligent applications.
         </h1>
 
         <p class="hero-description">
-            I'm {{ $profile['name'] }}, a {{ $profile['role'] }}
-            focused on backend engineering, API integrations,
-            data analytics and intelligent applications.
+            I'm a Senior Software Engineer with professional experience
+            in PHP, MySQL, REST APIs, integrations, and full-stack
+            web development. Currently expanding my expertise in
+            Python, data analytics, and AI applications.
         </p>
 
         <div class="hero-actions">
-            <a href="#projects" class="button button-primary">
-                Explore my work
+            <a href="{{ route('home') }}#projects" class="btn-primary">
+                Explore My Projects
             </a>
 
-            <a href="#contact" class="button button-secondary">
-                Let's connect
+            <a href="{{ route('home') }}#contact" class="btn-secondary">
+                Contact Me
+            </a>
+
+            <a href="{{ asset('files/simant-kumar-resume.pdf') }}"
+            class="btn-secondary"
+            download>
+                Download Resume
             </a>
         </div>
 
-        <p class="availability">
-            <span class="status-dot"></span>
-            Open to new opportunities
-        </p>
-    </div>
+        <div class="hero-highlights">
+            <div>
+                <strong>PHP</strong>
+                <span>Backend Development</span>
+            </div>
 
-    <div class="hero-card">
-        <div class="card-top">
-            <span>DEVELOPER PROFILE</span>
-            <span>01 / 04</span>
-        </div>
+            <div>
+                <strong>MySQL</strong>
+                <span>Database Management</span>
+            </div>
 
-        <div class="avatar">SK</div>
-
-        <h2>{{ $profile['name'] }}</h2>
-        <p>{{ $profile['role'] }}</p>
-
-        <div class="profile-divider"></div>
-
-        <div class="profile-stat">
-            <span>Primary focus</span>
-            <strong>Backend Engineering</strong>
-        </div>
-
-        <div class="profile-stat">
-            <span>Technologies</span>
-            <strong>PHP · Python · MySQL</strong>
-        </div>
-
-        <div class="profile-stat">
-            <span>Location</span>
-            <strong>{{ $profile['location'] }}</strong>
+            <div>
+                <strong>Python</strong>
+                <span>Growing Expertise</span>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section container" id="about">
-    <p class="eyebrow">01 — ABOUT ME</p>
-    <h2>Engineering experience.<br><span>Continuous learning.</span></h2>
+<section class="experience-section" id="experience">
+    <div class="section-heading">
+        <p class="section-eyebrow">MY CAREER</p>
+        <h2>Professional Experience</h2>
+        <p>
+            My professional journey in software development,
+            backend engineering, and application integration.
+        </p>
+    </div>
 
-    <p class="section-description">
-        I build and maintain web applications, backend services,
-        database-driven systems and third-party integrations.
-        My professional foundation is in PHP and full-stack
-        development, while I'm expanding my work into Python,
-        analytics and AI-powered applications.
-    </p>
+    <div class="experience-timeline">
+
+        <div class="experience-card">
+            <div class="experience-date">
+                October 2019 – Present
+            </div>
+
+            <div class="experience-content">
+                <h3>Senior Software Engineer</h3>
+                <h4>MobiProbe</h4>
+
+                <p>
+                    Working on web-based application performance
+                    monitoring solutions, backend development,
+                    database operations, and third-party integrations.
+                </p>
+
+                <ul>
+                    <li>
+                        Develop and maintain backend applications
+                        using PHP and Python.
+                    </li>
+                    <li>
+                        Build and integrate REST APIs and
+                        third-party services.
+                    </li>
+                    <li>
+                        Work with MySQL databases, queries,
+                        data models, and application optimization.
+                    </li>
+                    <li>
+                        Develop frontend functionality using
+                        JavaScript, jQuery, HTML, and CSS.
+                    </li>
+                    <li>
+                        Participate in research and development
+                        to solve technical challenges and explore
+                        new technologies.
+                    </li>
+                </ul>
+
+                <div class="experience-tags">
+                    <span>PHP</span>
+                    <span>Python</span>
+                    <span>MySQL</span>
+                    <span>REST APIs</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-date">
+                2017 – 2019
+            </div>
+
+            <div class="experience-content">
+                <h3>Junior Web Developer</h3>
+                <h4>Earlier Professional Experience</h4>
+
+                <p>
+                    Started my software development career working
+                    on small web development assignments and projects.
+                </p>
+
+                <ul>
+                    <li>Worked with PHP and Python fundamentals.</li>
+                    <li>Developed web pages using HTML and CSS.</li>
+                    <li>Worked with JavaScript for frontend functionality.</li>
+                </ul>
+
+                <div class="experience-tags">
+                    <span>PHP</span>
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="skills-section" id="skills">
+    <div class="section-heading">
+        <p class="section-eyebrow">MY EXPERTISE</p>
+        <h2>Technical Skills</h2>
+        <p>
+            Technologies and tools I use for building,
+            integrating, and improving software applications.
+        </p>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-icon">⌨️</div>
+            <h3>Backend Development</h3>
+            <p>
+                PHP, Laravel, Python, REST APIs,
+                API integrations, Webhooks
+            </p>
+            <span class="skill-level">Core expertise: PHP</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <h3>Database Management</h3>
+            <p>
+                MySQL, SQLite, MongoDB,
+                SQL queries, Data Modeling
+            </p>
+            <span class="skill-level">Professional experience</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Frontend Development</h3>
+            <p>
+                HTML5, CSS3, JavaScript,
+                jQuery, Bootstrap
+            </p>
+            <span class="skill-level">Professional experience</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🔗</div>
+            <h3>Integrations & Communication</h3>
+            <p>
+                REST APIs, JSON, XML,
+                cURL, Postman, WebSocket, XMPP
+            </p>
+            <span class="skill-level">Professional experience</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>Data Analytics</h3>
+            <p>
+                Python, Pandas, NumPy,
+                Data Processing, Visualization
+            </p>
+            <span class="skill-level">Developing expertise</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🤖</div>
+            <h3>AI & Machine Learning</h3>
+            <p>
+                Machine Learning fundamentals,
+                AI applications, AIML, Chatbots
+            </p>
+            <span class="skill-level">Learning & project development</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-content">
+        <div class="about-label">
+            <p class="section-eyebrow">ABOUT ME</p>
+            <h2>Engineering solutions with practical experience and curiosity.</h2>
+        </div>
+
+        <div class="about-description">
+            <p>
+                I'm a Software Engineer with professional experience
+                in developing and maintaining web applications,
+                backend systems, database-driven solutions, and
+                third-party integrations.
+            </p>
+
+            <p>
+                Since starting my professional journey, I've worked
+                extensively with PHP, MySQL, JavaScript, and web
+                technologies, contributing to application development,
+                troubleshooting, optimization, and technical research.
+            </p>
+
+            <p>
+                I'm currently expanding my skills in Python,
+                data analytics, and AI application development,
+                with a focus on building practical projects that
+                solve real-world business problems.
+            </p>
+
+            <div class="about-details">
+                <div>
+                    <strong>Education</strong>
+                    <span>B.Tech – Information Technology</span>
+                </div>
+
+                <div>
+                    <strong>Location</strong>
+                    <span>India</span>
+                </div>
+
+                <div>
+                    <strong>Primary Expertise</strong>
+                    <span>PHP Backend & Full-Stack Development</span>
+                </div>
+
+                <div>
+                    <strong>Career Focus</strong>
+                    <span>Backend Engineering & AI Applications</span>
+                </div>
+            </div>
+
+            <a href="{{ route('contact') }}" class="btn-primary">
+                Let's Connect
+            </a>
+        </div>
+    </div>
 </section>
 
 <section class="section container" id="skills">
@@ -92,48 +298,31 @@
 
 <section class="section container" id="projects">
     <p class="eyebrow">03 — SELECTED WORK</p>
-    <h2>Projects & experiments</h2>
+
+    <h2>Projects & Integrations</h2>
 
     <p class="section-description">
-        Practical projects demonstrating backend development,
-        data analytics and AI application engineering.
-        Project demonstrations will be added as they are built.
+        A selection of software products, backend development work,
+        and third-party integrations I've contributed to.
     </p>
 
-    <div class="project-grid">
-        <article class="project-card">
-            <span>PHP · BACKEND</span>
-            <h3>BusinessFlow CRM</h3>
-            <p>Customer management, lead tracking and API integrations.</p>
-            <span class="project-status">Planned project</span>
-        </article>
-
-        <article class="project-card">
-            <span>PYTHON · ANALYTICS</span>
-            <h3>Business Intelligence</h3>
-            <p>Data cleaning, business KPIs and interactive dashboards.</p>
-            <span class="project-status">Planned project</span>
-        </article>
-
-        <article class="project-card">
-            <span>PYTHON · MACHINE LEARNING</span>
-            <h3>AI Lead Intelligence</h3>
-            <p>Lead scoring and conversion probability predictions.</p>
-            <span class="project-status">Planned project</span>
-        </article>
-    </div>
+    <a href="{{ route('projects') }}" class="button button-primary">
+        Explore All Projects
+    </a>
 </section>
-
++9*
 <section class="section container" id="contact">
     <p class="eyebrow">04 — CONTACT</p>
+
     <h2>Have a project in mind?</h2>
+
     <p class="section-description">
         I'm interested in software engineering opportunities
         and building useful technology.
     </p>
-    <a href="mailto:ksimant30@gmail.com" class="button button-primary">
-        Email me
+
+    <a href="{{ route('contact') }}" class="button button-primary">
+        Get in Touch
     </a>
 </section>
-
 @endsection
