@@ -9,6 +9,7 @@
         <a href="{{ route('home') }}#experience">Experience</a>
         <a href="{{ route('home') }}#skills">Skills</a>
         <a href="{{ route('home') }}#projects">Projects</a>
+        <a href="{{ route('blog.index') }}#Blog">Blog</a>
         <a href="{{ route('home') }}#contact" class="nav-contact">Contact</a>
     </nav>
 </header>

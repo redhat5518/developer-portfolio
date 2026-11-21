@@ -6,6 +6,10 @@
 @section('content')
 
 <section class="hero">
+    <div class="hero-image">
+        <img src="{{ asset('images/profile-photo.jpeg') }}"
+            alt="Simant Kumar - Senior Software Engineer">
+    </div>
     <div class="hero-content">
         <p class="hero-eyebrow">SOFTWARE ENGINEER · INDIA</p>
 
@@ -310,7 +314,7 @@
         Explore All Projects
     </a>
 </section>
-+9*
+
 <section class="section container" id="contact">
     <p class="eyebrow">04 — CONTACT</p>
 
