@@ -71,10 +71,18 @@ Route::get('/database-check', function () {
 
     } catch (\Throwable $e) {
 
-        return response()->json([
-            'status' => 'error',
-            'message' => 'Database connection failed.',
-        ], 500);
-    }
+    \Illuminate\Support\Facades\Log::error(
+        'PostgreSQL connection diagnostic failed',
+        [
+            'exception' => get_class($e),
+            'message' => $e->getMessage(),
+        ]
+    );
+
+    return response()->json([
+        'status' => 'error',
+        'message' => 'Database connection failed. Check application logs.',
+    ], 500);
+  }
 
 });
