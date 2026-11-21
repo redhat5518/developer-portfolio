@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\BlogController;
+use Illuminate\Support\Facades\DB;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -50,4 +51,30 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('/posts/{post}', [PostController::class, 'destroy'])
             ->name('posts.destroy');
     });
+});
+
+Route::get('/database-check', function () {
+
+    abort_unless(
+        request()->query('key') === env('DB_CHECK_KEY'),
+        404
+    );
+
+    try {
+        DB::connection('pgsql')->getPdo();
+
+        return response()->json([
+            'status' => 'success',
+            'database' => DB::connection('pgsql')->getDatabaseName(),
+            'message' => 'PostgreSQL connection successful.',
+        ]);
+
+    } catch (\Throwable $e) {
+
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Database connection failed.',
+        ], 500);
+    }
+
 });
