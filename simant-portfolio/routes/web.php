@@ -6,7 +6,6 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\BlogController;
-use Illuminate\Support\Facades\DB;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -53,36 +52,35 @@ Route::prefix('admin')->name('admin.')->group(function () {
     });
 });
 
-Route::get('/database-check', function () {
+Route::get('/run-production-migrations', function () {
 
     abort_unless(
-        request()->query('key') === env('DB_CHECK_KEY'),
+        request()->query('key') === env('MIGRATION_SECRET'),
         404
     );
 
     try {
-        DB::connection('pgsql')->getPdo();
+        \Illuminate\Support\Facades\Artisan::call('migrate', [
+            '--force' => true,
+        ]);
 
         return response()->json([
             'status' => 'success',
-            'database' => DB::connection('pgsql')->getDatabaseName(),
-            'message' => 'PostgreSQL connection successful.',
+            'message' => 'Production database migrations completed.',
+            'output' => \Illuminate\Support\Facades\Artisan::output(),
         ]);
 
     } catch (\Throwable $e) {
 
-    \Illuminate\Support\Facades\Log::error(
-        'PostgreSQL connection diagnostic failed',
-        [
-            'exception' => get_class($e),
-            'message' => $e->getMessage(),
-        ]
-    );
+        \Illuminate\Support\Facades\Log::error(
+            'Production migration failed',
+            ['message' => $e->getMessage()]
+        );
 
-    return response()->json([
-        'status' => 'error',
-        'message' => 'Database connection failed. Check application logs.',
-    ], 500);
-  }
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Migration failed. Check application logs.',
+        ], 500);
+    }
 
 });
