@@ -10,20 +10,24 @@
         <img src="{{ asset('images/profile-photo.jpeg') }}"
             alt="Simant Kumar - Senior Software Engineer">
     </div>
+    
     <div class="hero-content">
-        <p class="hero-eyebrow">SOFTWARE ENGINEER · INDIA</p>
+        <p class="hero-eyebrow">
+            SENIOR SOFTWARE ENGINEER · BACKEND & AI INTEGRATIONS · INDIA
+        </p>
 
         <h1>
-            Building reliable
-            <span>backend solutions</span>
-            and intelligent applications.
+            Engineering
+            <span>enterprise backend systems</span>
+            and AI-enabled applications.
         </h1>
 
         <p class="hero-description">
-            I'm a Senior Software Engineer with professional experience
-            in PHP, MySQL, REST APIs, integrations, and full-stack
-            web development. Currently expanding my expertise in
-            Python, data analytics, and AI applications.
+            I'm a Senior Software Engineer with 9+ years of experience
+            in PHP, Python, backend engineering, REST APIs, and enterprise
+            integrations. My experience spans SportsTech platforms,
+            application modernization, data-driven solutions, and practical
+            AI/ML technologies including LangChain, PyTorch, and RAG.
         </p>
 
         <div class="hero-actions">
@@ -44,21 +48,22 @@
 
         <div class="hero-highlights">
             <div>
-                <strong>PHP</strong>
-                <span>Backend Development</span>
+                <strong>9+ Years</strong>
+                <span>Software Engineering</span>
             </div>
 
             <div>
-                <strong>MySQL</strong>
-                <span>Database Management</span>
+                <strong>PHP & Python</strong>
+                <span>Backend Engineering</span>
             </div>
 
             <div>
-                <strong>Python</strong>
-                <span>Growing Expertise</span>
+                <strong>AI & ML</strong>
+                <span>Intelligent Applications</span>
             </div>
         </div>
     </div>
+
 </section>
 
 <section class="experience-section" id="experience">
@@ -78,48 +83,139 @@
                 October 2019 – Present
             </div>
 
+            
             <div class="experience-content">
                 <h3>Senior Software Engineer</h3>
                 <h4>MobiProbe</h4>
 
                 <p>
-                    Working on web-based application performance
-                    monitoring solutions, backend development,
-                    database operations, and third-party integrations.
+                    Working on enterprise application performance monitoring solutions,
+                    backend engineering, SportsTech platforms, AI enablement, database
+                    operations, and third-party integrations. Contributing to application
+                    modernization, technical research, and development of data-driven solutions.
                 </p>
 
+                <h4>Backend Engineering &amp; Enterprise Applications</h4>
                 <ul>
                     <li>
-                        Develop and maintain backend applications
-                        using PHP and Python.
+                        Develop and enhance enterprise web applications using PHP and Python,
+                        including Flask-based backend components, business logic, and
+                        data processing workflows.
                     </li>
                     <li>
-                        Build and integrate REST APIs and
-                        third-party services.
+                        Design, develop, and integrate RESTful APIs, webhooks, and third-party
+                        services using HTTP, JSON, XML, and OAuth 2.0.
                     </li>
                     <li>
-                        Work with MySQL databases, queries,
-                        data models, and application optimization.
+                        Work with MySQL databases, data modeling, query optimization,
+                        database operations, and backend performance troubleshooting.
                     </li>
                     <li>
-                        Develop frontend functionality using
-                        JavaScript, jQuery, HTML, and CSS.
+                        Develop frontend functionality using JavaScript, jQuery,
+                        HTML5, CSS3, and Bootstrap.
+                    </li>
+                </ul>
+
+                <h4>AI Enablement, Machine Learning &amp; Data Science</h4>
+                <ul>
+                    <li>
+                        Gain practical experience with LangChain, PyTorch, and Pandas
+                        through AI/ML development and technical exploration.
                     </li>
                     <li>
-                        Participate in research and development
-                        to solve technical challenges and explore
-                        new technologies.
+                        Collaborate on Retrieval-Augmented Generation (RAG) and
+                        embedding-based architecture for AthleteMonitoring, exploring
+                        intelligent data retrieval and AI-powered application capabilities.
+                    </li>
+                    <li>
+                        Contribute to pretrained deep learning model fine-tuning using
+                        PyTorch for an experimental crop disease image classification initiative.
+                    </li>
+                    <li>
+                        Contribute to computer vision ideation, image annotation,
+                        and dataset preparation for machine learning workflows.
+                    </li>
+                </ul>
+
+                <h4>SportsTech &amp; Data Visualization</h4>
+                <ul>
+                    <li>
+                        Contribute to AthleteMonitoring, an enterprise SportsTech platform
+                        focused on athlete performance analytics, wellness monitoring,
+                        injury management, and reporting.
+                    </li>
+                    <li>
+                        Develop complex interactive Highcharts dashboards and data
+                        visualizations for performance analytics and stakeholder reporting.
+                    </li>
+                    <li>
+                        Work on backend functionality supporting athlete data processing,
+                        performance tracking, and wellness workflows.
+                    </li>
+                </ul>
+
+                <h4>API Integrations &amp; Payment Systems</h4>
+                <ul>
+                    <li>
+                        Implement third-party integrations using REST APIs, HTTP requests,
+                        JSON, webhooks, and authentication mechanisms.
+                    </li>
+                    <li>
+                        Personally implement Twilio integration for communication-related functionality.
+                    </li>
+                    <li>
+                        Integrate external platforms including Slack, Zapier, Asana, and ClassLink.
+                    </li>
+                    <li>
+                        Work on Stripe payment gateway integration and subscription management workflows.
+                    </li>
+                </ul>
+
+                <h4>Legacy Modernization &amp; Application Security</h4>
+                <ul>
+                    <li>
+                        Contribute to the AthleteMonitoring UI revamp and modernization
+                        of legacy application components.
+                    </li>
+                    <li>
+                        Migrate and upgrade outdated libraries, dependencies, packages,
+                        and framework components to improve compatibility, maintainability,
+                        and security.
+                    </li>
+                    <li>
+                        Participate in technical research, application troubleshooting,
+                        code reviews, and engineering improvements to address complex
+                        technical challenges.
                     </li>
                 </ul>
 
                 <div class="experience-tags">
                     <span>PHP</span>
                     <span>Python</span>
+                    <span>Flask</span>
                     <span>MySQL</span>
                     <span>REST APIs</span>
+                    <span>LangChain</span>
+                    <span>PyTorch</span>
+                    <span>Pandas</span>
+                    <span>RAG</span>
+                    <span>Embeddings</span>
+                    <span>Computer Vision</span>
+                    <span>Machine Learning</span>
+                    <span>SportsTech</span>
+                    <span>Highcharts</span>
+                    <span>Twilio</span>
+                    <span>Stripe</span>
+                    <span>OAuth 2.0</span>
+                    <span>Webhooks</span>
                     <span>JavaScript</span>
+                    <span>jQuery</span>
+                    <span>Bootstrap</span>
+                    <span>Legacy Modernization</span>
                 </div>
             </div>
+            </div>
+
         </div>
 
         <div class="experience-card">
@@ -238,26 +334,44 @@
             <h2>Engineering solutions with practical experience and curiosity.</h2>
         </div>
 
+        
         <div class="about-description">
             <p>
-                I'm a Software Engineer with professional experience
-                in developing and maintaining web applications,
-                backend systems, database-driven solutions, and
-                third-party integrations.
+                I'm a Senior Software Engineer with 9+ years of experience
+                in enterprise application development, backend engineering,
+                API integrations, and data-driven platforms. I specialize
+                in building reliable backend systems, integrating external
+                services, and solving complex engineering challenges.
             </p>
 
             <p>
-                Since starting my professional journey, I've worked
-                extensively with PHP, MySQL, JavaScript, and web
-                technologies, contributing to application development,
-                troubleshooting, optimization, and technical research.
+                My core technical expertise includes PHP, Python, Flask,
+                MySQL, RESTful APIs, and modern web technologies. I've
+                worked on enterprise applications, SportsTech solutions,
+                payment gateway integrations, subscription management,
+                and complex data visualization dashboards using Highcharts.
             </p>
 
             <p>
-                I'm currently expanding my skills in Python,
-                data analytics, and AI application development,
-                with a focus on building practical projects that
-                solve real-world business problems.
+                I also have practical experience with AI/ML technologies
+                including LangChain, PyTorch, and Pandas. My exposure
+                includes collaborating on Retrieval-Augmented Generation
+                (RAG) and embedding-based architecture, model fine-tuning,
+                computer vision initiatives, and image annotation workflows.
+            </p>
+
+            <p>
+                Beyond application development, I've contributed to legacy
+                system modernization, dependency and framework upgrades,
+                application security improvements, and third-party
+                integrations involving Twilio, Stripe, Slack, Zapier,
+                and other platforms.
+            </p>
+
+            <p>
+                I'm particularly interested in building enterprise-grade
+                backend systems and intelligent applications that combine
+                APIs, data processing, automation, and AI capabilities.
             </p>
 
             <div class="about-details">
@@ -273,12 +387,22 @@
 
                 <div>
                     <strong>Primary Expertise</strong>
-                    <span>PHP Backend & Full-Stack Development</span>
+                    <span>PHP, Python & Backend Engineering</span>
                 </div>
 
                 <div>
-                    <strong>Career Focus</strong>
-                    <span>Backend Engineering & AI Applications</span>
+                    <strong>Specialization</strong>
+                    <span>Enterprise Applications & API Integrations</span>
+                </div>
+
+                <div>
+                    <strong>AI/ML Technologies</strong>
+                    <span>LangChain, PyTorch, Pandas, RAG & Embeddings</span>
+                </div>
+
+                <div>
+                    <strong>Industry Experience</strong>
+                    <span>SportsTech & Enterprise Software</span>
                 </div>
             </div>
 
@@ -286,6 +410,7 @@
                 Let's Connect
             </a>
         </div>
+
     </div>
 </section>
 
